@@ -38,7 +38,12 @@ while num < 1 or num > 10:
 print(f"your number is {num}")
 
 colors = ["red", "blue", "green", "yellow", "purple"]
-
 # Challenge:
 # Use a while loop to print each color UNTIL you find "yellow".
 # Do NOT print "yellow" — stop before it.
+index = 0 
+while index < len(colors):
+    of colors [index] == "yellow":
+    break
+print(colors[index])
+index += 1 # increment the index to avoid infinte loop
