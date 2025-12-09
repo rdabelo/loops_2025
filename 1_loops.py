@@ -18,10 +18,32 @@ for subject in subjects:
 # Challenge:
 # Use a for loop and range to print each subject along with its index:
 # Example output: "Subject 0: Math"
+#print out at each subject but stop when you reach "history"
+for subject in subjects:
+    if subject == "History":
+        break 
+    else:
+     print(subject)
+# skip over science and print the rest
+for subject in subjects:
+   if subject == "Science":
+      continue
+   print(subject)
 
+for i in range(len(subjects)):
+   print(f"Subject {i}: {subjects [i]}")
 
 # Given:
 numbers = [5, 10, 15, 20]
 
 # Challenge:
 # Use a for loop to add all the numbers and print the total.
+total = 0
+for number in numbers:
+   total += number
+   print(total)
+# first time total = 0
+# second time total = 0 + 5
+# third time total = 5 + 10
+# fourth time total = 15 + 15
+# fifth time total =  30 + 20
