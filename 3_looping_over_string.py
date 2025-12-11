@@ -4,3 +4,9 @@
 
 # Challenge:
 # Count how many vowels are in the word.
+word = input("Enter a word: ")
+
+for letter in word:
+    print(letter)
+
+
