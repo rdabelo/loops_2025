@@ -67,13 +67,13 @@
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
-name = input("Enter a string:")
-reversed_name = ""
-for char in name:
-    reversed_name = char + reversed_name
+# name = input("Enter a string:")
+# reversed_name = ""
+# for char in name:
+#     reversed_name = char + reversed_name
 
-print("Reversed string:", reversed_name)
-print(reversed_name[::-1])
+# print("Reversed string:", reversed_name)
+# print(reversed_name[::-1])
 
 
 # ### **Problem 7: Multiplication Table**
@@ -93,8 +93,28 @@ print(reversed_name[::-1])
 # ### **Problem 9: Fibonacci Sequence**
 
 # Ask the user for a number **n**, then print the first **n numbers** of the Fibonacci sequence.
+# recursion means a function calls itself
+# an example of recursion is fibonacci sequence
+# def carprice(n):
+#     if n <= 0:
+#         return 0
+#     elif n ==1:
+#         return 1 
+#     else:
+#         return carprice(n-1) + carprice(n-2)
 
+print(carprice(n))
 
+def fibonacci(n):
+
+    if n in [1,2]:
+        return 1
+
+    return fibonacci(n-1)+fibonacci(n-2)
+
+for i in range(1,10):
+    print(fibonacci(i))
+    
 
 # ### **Problem 10: Pattern Printing**
 
