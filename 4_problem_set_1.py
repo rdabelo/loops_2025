@@ -51,8 +51,18 @@ print(factorial(n))
 # ### **Problem 5: Print Even Numbers**
 
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
+n = int(input("enter a number: "))
+print("even Numbers from to", n, ":")
+for number in range(2, n + 1, 2):
+    print(number)
+# if number is even, print it
+list_even_numbers = list(range(1, 45))
+for number in list_even_numbers:
 
-
+    if number % 2 == 0:
+        print("even number", number)
+    else:
+        print("odd number, skipping", number)
 
 # ### **Problem 6: Reverse a String**
 
